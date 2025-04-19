@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mes Compétences MySQL | Portfolio Benrahhou</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --primary: #2c3e50;
+      --secondary: #3498db;
+      --accent: #e74c3c;
+      --light: #ecf0f1;
+      --dark: #2c3e50;
+    }
+    
+    body {
+      font-family: 'Roboto', sans-serif;
+      line-height: 1.6;
+      color: var(--dark);
+      background-color: #f9f9f9;
+      margin: 0;
+      padding: 0;
+    }
+    
+    .container {
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+    
+    header {
+      background: linear-gradient(135deg, var(--primary), var(--secondary));
+      color: white;
+      padding: 60px 0;
+      text-align: center;
+      border-radius: 0 0 20px 20px;
+      box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+    }
+    
+    h1, h2, h3 {
+      font-family: 'Playfair Display', serif;
+    }
+    
+    h1 {
+      font-size: 2.8rem;
+      margin-bottom: 15px;
+    }
+    
+    .subtitle {
+      font-size: 1.2rem;
+      max-width: 700px;
+      margin: 0 auto;
+      opacity: 0.9;
+    }
+    
+    .card {
+      background: white;
+      border-radius: 10px;
+      padding: 30px;
+      margin: 30px 0;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+    
+    .card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    }
+    
+    .card h2 {
+      color: var(--secondary);
+      margin-bottom: 20px;
+      border-bottom: 2px solid var(--light);
+      padding-bottom: 10px;
+    }
+    
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+      gap: 30px;
+      margin: 40px 0;
+    }
+    
+    .skill {
+      display: flex;
+      align-items: center;
+      margin-bottom: 15px;
+    }
+    
+    .skill-icon {
+      width: 40px;
+      height: 40px;
+      background: var(--light);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-right: 15px;
+      color: var(--secondary);
+      font-size: 20px;
+    }
+    
+    .code-block {
+      background: #2d3748;
+      color: #f8fafc;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 20px 0;
+      overflow-x: auto;
+      font-family: 'Courier New', monospace;
+    }
+    
+    .keyword {
+      color: #63b3ed;
+    }
+    
+    .string {
+      color: #68d391;
+    }
+    
+    .comment {
+      color: #a0aec0;
+      font-style: italic;
+    }
+    
+    .table {
+      width: 100%;
+      border-collapse: collapse;
+      margin: 20px 0;
+    }
+    
+    .table th {
+      background: var(--secondary);
+      color: white;
+      text-align: left;
+    }
+    
+    .table th, .table td {
+      padding: 12px 15px;
+      border: 1px solid #ddd;
+    }
+    
+    .table tr:nth-child(even) {
+      background: var(--light);
+    }
+    
+    .visual {
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      margin: 40px 0;
+      text-align: center;
+    }
+    
+    .visual img {
+      max-width: 100%;
+      border-radius: 8px;
+      box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    }
+    
+    footer {
+      text-align: center;
+      padding: 30px;
+      background: var(--dark);
+      color: white;
+      margin-top: 50px;
+    }
+    
+    @media (max-width: 768px) {
+      h1 {
+        font-size: 2.2rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Mes Compétences MySQL</h1>
+      <p class="subtitle">Gestion de bases de données relationnelles avec MySQL</p>
+    </div>
+  </header>
+
+  <div class="container">
+    <section class="card">
+      <h2>À Propos de Mon Expérience MySQL</h2>
+      <p>En tant que développeur débutant, j'ai acquis des compétences solides dans la gestion de bases de données MySQL. Je maîtrise les opérations fondamentales et peux créer des structures de données efficaces pour des applications web simples.</p>
+      
+      <div class="grid">
+        <div>
+          <h3>Ce que je maîtrise :</h3>
+          <div class="skill">
+            <div class="skill-icon">✓</div>
+            <span>Création de bases et tables</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">✓</div>
+            <span>Opérations CRUD de base</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">✓</div>
+            <span>Gestion des utilisateurs</span>
+          </div>
+        </div>
+        
+        <div>
+          <h3>Ce que j'apprends :</h3>
+          <div class="skill">
+            <div class="skill-icon">↻</div>
+            <span>Requêtes complexes (JOIN, subqueries)</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">↻</div>
+            <span>Optimisation des performances</span>
+          </div>
+          <div class="skill">
+            <div class="skill-icon">↻</div>
+            <span>Procédures stockées</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Exemples Concrets</h2>
+      
+      <h3>Création d'une Table Utilisateurs</h3>
+      <div class="code-block">
+<span class="keyword">CREATE TABLE</span> utilisateurs (
+  id <span class="keyword">INT AUTO_INCREMENT PRIMARY KEY</span>,
+  nom <span class="keyword">VARCHAR</span>(50) <span class="keyword">NOT NULL</span>,
+  email <span class="keyword">VARCHAR</span>(100) <span class="keyword">UNIQUE NOT NULL</span>,
+  date_inscription <span class="keyword">TIMESTAMP DEFAULT</span> CURRENT_TIMESTAMP,
+  actif <span class="keyword">BOOLEAN DEFAULT</span> 1
+);
+      </div>
+      
+      <h3>Requêtes de Base</h3>
+      <table class="table">
+        <tr>
+          <th>Opération</th>
+          <th>Exemple</th>
+        </tr>
+        <tr>
+          <td>INSERT</td>
+          <td><span class="keyword">INSERT INTO</span> utilisateurs (nom, email) <span class="keyword">VALUES</span> ('Ali', 'ali@example.com');</td>
+        </tr>
+        <tr>
+          <td>SELECT</td>
+          <td><span class="keyword">SELECT</span> * <span class="keyword">FROM</span> utilisateurs <span class="keyword">WHERE</span> actif = 1;</td>
+        </tr>
+        <tr>
+          <td>UPDATE</td>
+          <td><span class="keyword">UPDATE</span> utilisateurs <span class="keyword">SET</span> nom = 'Ali B' <span class="keyword">WHERE</span> id = 1;</td>
+        </tr>
+        <tr>
+          <td>DELETE</td>
+          <td><span class="keyword">DELETE FROM</span> utilisateurs <span class="keyword">WHERE</span> actif = 0;</td>
+        </tr>
+      </table>
+    </section>
+
+    <section class="visual">
+      <h2>Schéma de Base de Données</h2>
+      <p>Exemple de structure pour une application de blog :</p>
+      <img src="https://i.imgur.com/XYQ2zTl.png" alt="Schéma de base de données MySQL">
+      <p><small>Relations entre tables utilisateurs, articles et commentaires</small></p>
+    </section>
+
+    <section class="card">
+      <h2>Gestion des Utilisateurs</h2>
+      <p>Je sais configurer les accès de base pour sécuriser une base de données :</p>
+      
+      <div class="code-block">
+<span class="comment">-- Création d'un utilisateur avec accès limité</span>
+<span class="keyword">CREATE USER</span> 'app_user'@'localhost' <span class="keyword">IDENTIFIED BY</span> <span class="string">'MotDePasseSecure123!'</span>;
+
+<span class="comment">-- Attribution des privilèges</span>
+<span class="keyword">GRANT SELECT, INSERT, UPDATE</span> <span class="keyword">ON</span> ma_base.* <span class="keyword">TO</span> 'app_user'@'localhost';
+
+<span class="comment">-- Actualisation des permissions</span>
+<span class="keyword">FLUSH PRIVILEGES</span>;
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Ali Benrahhou | Tous droits réservés</p>
+    </div>
+  </footer>
+</body>
+</html>
